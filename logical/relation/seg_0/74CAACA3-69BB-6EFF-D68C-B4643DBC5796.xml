@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Borrows" directorySegmentName="seg_0" id="74CAACA3-69BB-6EFF-D68C-B4643DBC5796">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:06:21 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<sourcePk>CBEC9A81-EDBA-1628-3968-068E11498A91</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E54345FB-78F6-8DAD-7743-AD95421029F6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

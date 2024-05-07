@@ -1,0 +1,660 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F051817F-4BF0-E625-0B93-5FBDC957FB0F" mainViewID="C14CC63F-B4E3-2508-9845-D0074963F1AC">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:14:51 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<Entities>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4EC7D27A-A868-9CC0-83F9-EFAC6A188F21" name="Admin">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:26:18 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="AdminId" id="D48B4E67-D143-26CB-BF5D-4C056CBF96B9">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:19 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adminName" id="98DD0554-4B38-501D-7BAA-118159C07E91">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:24 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="CEFF90D6-2622-182D-67B5-24646413D708">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:24 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="3A8F805B-6BB9-8365-F23B-B827B8067FE3">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:24 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phoneNum" id="14565F9E-9509-F2AA-762E-C89940ED7635">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:25 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="794C6F4A-1F01-F645-1C4C-87BEAB0B4686">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:25 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09AFB0B7-F6BB-5941-93AD-4CAA0F3A4B78" name="Admin PK">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:27:48 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D48B4E67-D143-26CB-BF5D-4C056CBF96B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2" name="Book">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:10 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BookID" id="ECD21BC3-DD1F-DAB7-60F1-0D4025A80A4F">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:19 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="primary key"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>bk_id</preferredAbbreviation>
+</Attribute>
+<Attribute name="CategoryId" id="FCAFBE3F-5CCD-0364-5CC1-145E64CBA687">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:21 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BorrowingFees" id="2A3A1184-0392-A869-A6BE-B49D6D16ACC8">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:21 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ISBN" id="9D005109-F2CC-F848-F296-C472AA12531E">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:22 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Title" id="CCE56C43-6115-43EB-599E-9CB5DC560500">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:22 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Author" id="3EB9C869-4946-A846-7D27-029A1C1BA66D">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:15:22 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AdminId" id="AC26C4E9-A97E-3D2E-6A55-84FCF33D5FCB">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:01:42 UTC</createdTime>
+<generatorID>7656513E-9A09-2188-1793-6113F3499F86</generatorID>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<referedAttribute>D48B4E67-D143-26CB-BF5D-4C056CBF96B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CategoryId1" id="F3F3857B-DF8F-707B-BD87-D4F3E2FFDAA8">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:05:31 UTC</createdTime>
+<generatorID>1B9C6055-4237-EC39-12EC-759422E5AE40</generatorID>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>37B65CEF-F42D-729B-504C-DC88D762A8C8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CBEC9A81-EDBA-1628-3968-068E11498A91" name="Book PK">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:18:33 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ECD21BC3-DD1F-DAB7-60F1-0D4025A80A4F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85945021-347A-2B4B-4B6F-75911D82077E" name="Category">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:30:42 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CategoryId" id="37B65CEF-F42D-729B-504C-DC88D762A8C8">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:30:49 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CategoryName" id="12E736BE-7A6A-F7EB-5431-31E0DFFAF3E4">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:30:49 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E8A329C-5A7E-7970-4CE2-07B7C6115524" name="Category PK">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:31:04 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>37B65CEF-F42D-729B-504C-DC88D762A8C8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C8433FEC-405A-8CD9-7F17-CE9FFAB73510" name="Review">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:31:23 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ReviewId" id="41AAA40C-6F50-AC13-B0A7-D1411FA644CA">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:31:29 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UserId" id="15B94DDD-B184-29BE-A269-4A90AE55F106">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:31:29 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comment" id="790DA219-DE7C-D843-E977-AD8911695429">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:31:29 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BookISBN" id="1C32D204-7CB1-0BD1-4B7E-6D5D035FDAEA">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:31:30 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BookID" id="F92CFF68-E409-439C-8A09-5583CE052B98">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:11:40 UTC</createdTime>
+<generatorID>BFB51301-E1CF-AEAE-3E14-ECBC3669F693</generatorID>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ECD21BC3-DD1F-DAB7-60F1-0D4025A80A4F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E54345FB-78F6-8DAD-7743-AD95421029F6" name="Student">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:36 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="StudentId" id="74DE35B4-A56C-EDBB-8162-5095D660D8BB">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:45 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StudentName" id="9557C41B-BC18-896E-086F-543E24E88539">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:45 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Address" id="660B9244-66A9-5BC1-3EA3-03814C0090AB">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:45 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="212DBA28-44BA-8E33-7003-A41F5F7CD15B">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:45 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Password" id="9BABDA7C-0E5D-41F5-0C12-F5A335B89B5D">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:45 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phoneNum" id="5CDDC93D-FF90-6F8C-4C82-57A29F62B39B">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:46 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="40CB2C62-DC72-5001-3605-522012BBA263" name="Student PK">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:32:51 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>74DE35B4-A56C-EDBB-8162-5095D660D8BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
+</Entities>
+<Relationships>
+<Relationship class="oracle.dbtools.crest.model.design.logical.Relation" name="Adds" directorySegmentName="seg_0" id="7656513E-9A09-2188-1793-6113F3499F86">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:00:50 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<sourcePk>09AFB0B7-F6BB-5941-93AD-4CAA0F3A4B78</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4EC7D27A-A868-9CC0-83F9-EFAC6A188F21</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relationship>
+<Relationship class="oracle.dbtools.crest.model.design.logical.Relation" name="Belongs To" directorySegmentName="seg_0" id="1B9C6055-4237-EC39-12EC-759422E5AE40">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:03:13 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<sourcePk>CBEC9A81-EDBA-1628-3968-068E11498A91</sourcePk>
+<targetPk>3E8A329C-5A7E-7970-4CE2-07B7C6115524</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>85945021-347A-2B4B-4B6F-75911D82077E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relationship>
+<Relationship class="oracle.dbtools.crest.model.design.logical.Relation" name="Borrows" directorySegmentName="seg_0" id="74CAACA3-69BB-6EFF-D68C-B4643DBC5796">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:06:21 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<sourcePk>CBEC9A81-EDBA-1628-3968-068E11498A91</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E54345FB-78F6-8DAD-7743-AD95421029F6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relationship>
+<Relationship class="oracle.dbtools.crest.model.design.logical.Relation" name="has" directorySegmentName="seg_0" id="BFB51301-E1CF-AEAE-3E14-ECBC3669F693">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:02:08 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<sourcePk>CBEC9A81-EDBA-1628-3968-068E11498A91</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C8433FEC-405A-8CD9-7F17-CE9FFAB73510</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relationship>
+</Relationships>
+<mainView class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="C14CC63F-B4E3-2508-9845-D0074963F1AC">
+<createdBy>AAY</createdBy>
+<modifiedBy>AAY</modifiedBy>
+<createdTime>2024-05-07 04:15:10 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4EC7D27A-A868-9CC0-83F9-EFAC6A188F21" otype="Entity" vid="50819594-3B6C-F00B-C1DE-0874B2E2BF17">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1" y="229" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="85945021-347A-2B4B-4B6F-75911D82077E" otype="Entity" vid="A9B1EA0C-AF04-3E04-654D-06725A4EA57C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="333" y="23" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2" otype="Entity" vid="5AA3DC7E-F86F-462A-63CA-6113FADE8C99">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="357" y="252" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C8433FEC-405A-8CD9-7F17-CE9FFAB73510" otype="Entity" vid="9AC5B819-8FA1-7529-3F09-7F2F044D909E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="364" y="500" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E54345FB-78F6-8DAD-7743-AD95421029F6" otype="Entity" vid="72E4AD1A-5D05-8B6B-6377-EEB42025FEB7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="698" y="245" width="170" height="110"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="1B9C6055-4237-EC39-12EC-759422E5AE40" otype="Relation" vid_source="5AA3DC7E-F86F-462A-63CA-6113FADE8C99" vid_target="A9B1EA0C-AF04-3E04-654D-06725A4EA57C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="430" y="252"/>
+<point x="430" y="133"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="74CAACA3-69BB-6EFF-D68C-B4643DBC5796" otype="Relation" vid_source="72E4AD1A-5D05-8B6B-6377-EEB42025FEB7" vid_target="5AA3DC7E-F86F-462A-63CA-6113FADE8C99">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="698" y="318"/>
+<point x="527" y="318"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="7656513E-9A09-2188-1793-6113F3499F86" otype="Relation" vid_source="50819594-3B6C-F00B-C1DE-0874B2E2BF17" vid_target="5AA3DC7E-F86F-462A-63CA-6113FADE8C99">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="171" y="280"/>
+<point x="357" y="280"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="BFB51301-E1CF-AEAE-3E14-ECBC3669F693" otype="Relation" vid_source="5AA3DC7E-F86F-462A-63CA-6113FADE8C99" vid_target="9AC5B819-8FA1-7529-3F09-7F2F044D909E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="445" y="362"/>
+<point x="445" y="500"/>
+</points>
+</Connector>
+</connectors>
+</mainView>
+</LogicalDesign>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="has" directorySegmentName="seg_0" id="BFB51301-E1CF-AEAE-3E14-ECBC3669F693">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 06:02:08 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<engineerTo>
+<item key="D247D660-13D7-2896-75E4-40A344651AF8" value="true"/>
+</engineerTo>
+<sourcePk>CBEC9A81-EDBA-1628-3968-068E11498A91</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>91C17FCA-6211-DBAA-B8F9-CA9E47DA21B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C8433FEC-405A-8CD9-7F17-CE9FFAB73510</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
