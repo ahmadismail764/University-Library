@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Uni Library" id="186D5ED8-3C5D-1AE5-41ED-DF79A4F853AE" version="3.5">
+<createdBy>AAY</createdBy>
+<createdTime>2024-05-07 04:14:51 UTC</createdTime>
+<ownerDesignName>Uni Library</ownerDesignName>
+<modelPersistence>2</modelPersistence>
+<capitalNames>false</capitalNames>
+<designId>186D5ED8-3C5D-1AE5-41ED-DF79A4F853AE</designId>
+</OSDM_Design>
