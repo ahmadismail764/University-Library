@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="D247D660-13D7-2896-75E4-40A344651AF8" mainViewID="BAEDD71A-75D4-23ED-2223-083416C01262">
-<createdBy>AAY</createdBy>
-<createdTime>2024-05-07 04:14:51 UTC</createdTime>
-<ownerDesignName>Uni Library</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
-</relationalModel>

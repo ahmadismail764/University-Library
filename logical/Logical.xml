@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F051817F-4BF0-E625-0B93-5FBDC957FB0F" mainViewID="C14CC63F-B4E3-2508-9845-D0074963F1AC">
-<createdBy>AAY</createdBy>
-<createdTime>2024-05-07 04:14:51 UTC</createdTime>
-<ownerDesignName>Uni Library</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
