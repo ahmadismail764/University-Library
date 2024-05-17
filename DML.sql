@@ -1,32 +1,41 @@
-INSERT INTO Student (StudentId,StudentName,Email,Password)
-VALUES(1542,'Ahmad','a@a.a','p_123');
+INSERT INTO Student (username,email,password)
+VALUES('Ahmad','a@a.a','p_123');
 
-INSERT INTO Student (StudentId,StudentName,Email,Password)
-VALUES(2314,'Loay','b@a.a','j_120');
+INSERT INTO Student (username,email,password)
+VALUES('Loay','b@a.a','j_120');
 
-INSERT INTO Admin (AdminId,AdminName,Email,Password)
-VALUES(9205,'Omar','c@a.a','s_23');
+INSERT INTO Admin (username,email,password)
+VALUES('Omar','c@a.a','s_23');
 
-INSERT INTO Admin (AdminId,AdminName,Email,Password)
-VALUES(102,'Abdel-Aziz','d@a.a','p_103');
+INSERT INTO Admin (username,email,password)
+VALUES('Abdel-Aziz','d@a.a','p_103');
 
-INSERT INTO Book (BookID,ISBN,BorrowingFees,Title,Author)
-VALUES (102,'44UD',250,'Database 1','Mohamed');
+INSERT INTO Category(categoryId, categoryName)
+VALUES (0,'Comics');
 
-INSERT INTO Book (BookID,ISBN,BorrowingFees,Title,Author)
-VALUES (103,'45SD',300,'Database 2','Ali');
+INSERT INTO Category(categoryId, categoryName)
+VALUES (1,'Programming');
 
-INSERT INTO Book (BookID,ISBN,BorrowingFees,Title,Author)
-VALUES (903,'95SH',200,'Programming','Hussin');
+INSERT INTO Category(categoryId, categoryName)
+VALUES (2,'Programming');
 
-INSERT INTO Review(ReviewId,UserId,Comment,BookISBN)
-VALUES (510, 1542, 'Good!','95SH');
+INSERT INTO Book (ISBN,borrowingFees,title, categoryId, author)
+VALUES ('44UD',250,'Database 1',0,'Mohamed');
+
+INSERT INTO Book (ISBN,borrowingFees,Title,categoryId,author)
+VALUES ('45SD',300,'Database 2',1,'Ali');
+
+INSERT INTO Book (ISBN,borrowingFees,title,categoryId,author)
+VALUES ('95SH',200,'Programming',2,'Hussin');
+
+INSERT INTO Review(studentId,comment,bookISBN)
+VALUES (1, 'Good!','95SH');
 
 DELETE FROM Student
-WHERE StudentName = 'Loay';
+WHERE username = 'Loay';
 
 DELETE FROM Admin
-WHERE AdminId = 9205;
+WHERE id = 9205;
 
 DELETE FROM Book
 WHERE Title LIKE 'Database%';
@@ -35,21 +44,21 @@ UPDATE Book
 SET BorrowingFees = BorrowingFees + 50;
 
 UPDATE Student
-SET PhoneNum = '+201586'
-WHERE StudentId = 1542;
+SET phone = '+201586'
+WHERE id = 1542;
 
 UPDATE Admin
-SET PhoneNum = '+201510'
-WHERE Email = 'd@a.a';
+SET phone = '+201510'
+WHERE email = 'd@a.a';
 
 SELECT * 
 FROM Book;
 
 SELECT *
 FROM Student
-WHERE StudentId < 2000;
+WHERE id < 2000;
 
-SELECT Student.StudentName,Review.Comment,Book.Title
+SELECT Student.username,Review.Comment,Book.Title
 FROM Student,Review,Book
-WHERE Student.StudentId = Review.UserId
-and Review.BookISBN = Book.ISBN;
+WHERE Student.id = Review.studentId
+and Review.bookISBN = Book.ISBN;
