@@ -38,18 +38,6 @@ create table
 
 create table
     Review (
-        reviewId int primary key,
-        bookId int primary key Identity (1, 1),
-        title varchar(50) not null,
-        author varchar(50) not null,
-        ISBN varchar(50) unique,
-        categoryId int,
-        foreign key (categoryId) REFERENCES Category (categoryId),
-        borrowingFees int not null,
-    );
-
-create table
-    Review (
         reviewId int primary key Identity (1, 1),
         studentId int,
         comment text,
