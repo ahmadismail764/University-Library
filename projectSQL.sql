@@ -47,14 +47,6 @@ create table
     );
 
 create table
-    Inventory (
-        numOfCopies int,
-        bookISBN varchar(50) unique,
-        adminId int foreign key (adminId) REFERENCES Admin (id),
-        foreign key (bookISBN) references Book (ISBN),
-    );
-
-create table
     Borrowed (
         issueDate VARCHAR(10),
         returnDate VARCHAR(10),
